@@ -1,0 +1,56 @@
+version: '3.8'
+
+
+#Use for APP build
+networks:
+  txagg-net:
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: txagg-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: txaggdb
+      POSTGRES_USER: txagg
+      POSTGRES_PASSWORD: txagg123
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - txagg-net
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U txagg -d txaggdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: txagg-app
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/txaggdb
+      SPRING_DATASOURCE_USERNAME: txagg
+      SPRING_DATASOURCE_PASSWORD: txagg123
+      SPRING_PROFILES_ACTIVE: local
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    ports:
+      - "8080:8080"
+    networks:
+      - txagg-net
+
+# Use for local test via ide
+
+#services:
+#  postgres:
+#    image: 'postgres:11.9-alpine'
+#    restart: always
+#    environment:
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=postgres
+#    ports:
+#      - '5432:5432'
+#    volumes:
+#      - /opt/h2-data

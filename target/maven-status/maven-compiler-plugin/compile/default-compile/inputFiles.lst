@@ -1,0 +1,15 @@
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\service\IngestService.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\dto\TransactionDto.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\controller\IngestController.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\util\Mapper.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\service\MockDataSourceA.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\dto\AggregationResponse.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\service\MockDataSourceB.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\repository\TransactionRepository.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\TransactionAggregationApplication.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\controller\TransactionController.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\model\Category.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\controller\AggregationController.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\service\CategorizerService.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\service\AggregationService.java
+C:\Users\tgarn\IdeaProjects\transaction-aggregation-api\src\main\java\com\example\txagg\model\Transaction.java

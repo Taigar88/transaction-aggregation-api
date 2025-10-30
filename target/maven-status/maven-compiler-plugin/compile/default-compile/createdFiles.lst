@@ -1,0 +1,15 @@
+com\example\txagg\controller\TransactionController.class
+com\example\txagg\model\Transaction.class
+com\example\txagg\dto\TransactionDto.class
+com\example\txagg\util\Mapper.class
+com\example\txagg\service\MockDataSourceA.class
+com\example\txagg\service\AggregationService.class
+com\example\txagg\model\Category.class
+com\example\txagg\controller\AggregationController.class
+com\example\txagg\service\CategorizerService.class
+com\example\txagg\service\IngestService.class
+com\example\txagg\dto\AggregationResponse.class
+com\example\txagg\repository\TransactionRepository.class
+com\example\txagg\controller\IngestController.class
+com\example\txagg\service\MockDataSourceB.class
+com\example\txagg\TransactionAggregationApplication.class
