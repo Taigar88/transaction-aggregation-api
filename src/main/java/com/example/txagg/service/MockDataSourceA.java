@@ -9,6 +9,9 @@ import java.util.List;
 
 @Component("mockA")
 public class MockDataSourceA {
+
+    //To build data for ref by API and push to postgres
+
     public List<TransactionDto> fetchRecent() {
         TransactionDto t1 = new TransactionDto();
         t1.customerId = "cust-1";
