@@ -32,7 +32,7 @@ public class AggregationService {
                                 Collectors.reducing(BigDecimal.ZERO, BigDecimal::add))
                 ));
 
-        // ensure all categories present (optional)
+        // ensure all categories present
         EnumMap<Category, BigDecimal> full = new EnumMap<>(Category.class);
         for (Category c : Category.values()) {
             full.put(c, totals.getOrDefault(c, BigDecimal.ZERO));
